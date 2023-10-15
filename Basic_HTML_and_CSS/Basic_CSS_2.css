@@ -1,0 +1,10 @@
+p {
+    color: yellow;
+    background-color: black;
+    font-size: large;
+    text-align: center;
+}
+
+h1 {
+    text-shadow: 2px 1px red;
+}
