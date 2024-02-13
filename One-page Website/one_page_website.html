@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Drift King Productions</title>
     <link rel="stylesheet" href="./CSS/one_page.css">
+    <script src="JS/one_page_website.js" defer></script>
 </head>
 <body>
     <!-- NAV -->
@@ -34,7 +35,7 @@
                 <!-- PHOTO 1 -->
                 
                 <div>
-                    <img src="./Images/drift_image_1.jpeg" alt="Car Drifting" height="250" width="400">
+                    <img src="./Images/drift_image_1.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Car Drifting">
                 </div>
 
                 <!-- END PHOTO 1 -->
@@ -42,7 +43,7 @@
                 <!-- PHOTO 2 -->
                 
                 <div>
-                    <img src="./Images/drift_image_2.webp" alt="Car Drifting" height="250" width="400">
+                    <img src="./Images/drift_image_2.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Car Drifting">
                 </div>
 
                 <!-- END PHOTO 2 -->
@@ -50,7 +51,7 @@
                 <!-- PHOTO 3 -->
                 
                 <div>
-                    <img src="./Images/drift_image_3.jpeg" alt="Car Drifting" height="250" width="400">
+                    <img src="./Images/drift_image_3.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Car Drifting">
                 </div>
 
                 <!-- END PHOTO 3 -->
@@ -58,7 +59,7 @@
                 <!-- PHOTO 4 -->
                 
                 <div>
-                    <img src="./Images/drift_image_4.webp" alt="Car Drifting" height="250" width="400">
+                    <img src="./Images/drift_image_4.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="Car Drifting">
                 </div>
 
                 <!-- END PHOTO 4 -->
@@ -66,18 +67,80 @@
                 <!-- PHOTO 5 -->
                 
                 <div>
-                    <img src="./Images/drift_image_5.webp" alt="Car Drifting" height="250" width="400">
+                    <img src="./Images/drift_image_5.jpeg" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="Car Drifting">
                 </div>
 
                 <!-- END PHOTO 5 -->
-
-                <!-- VIDEO 1 -->
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aGV6uNh33h4?si=XnIYuoMXZhdgXvjz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <!-- END VIDEO 1-->
-
             </div>
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+            
+                <div class="mySlides">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="./Images/drift_image_1_large.jpeg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="./Images/drift_image_2_large.jpeg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="./Images/drift_image_3_large.jpeg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="./Images/drift_image_4_large.jpeg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="./Images/drift_image_5_large.jpeg" style="width:100%">
+                </div>
+            
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="./Images/drift_image_1.jpeg" onclick="currentSlide(1)" alt="Drift Car 1">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="./Images/drift_image_2.jpeg" onclick="currentSlide(2)" alt="Drift Car 2">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="./Images/drift_image_3.jpeg" onclick="currentSlide(3)" alt="Drift Car 3">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="./Images/drift_image_4.jpeg" onclick="currentSlide(4)" alt="Drift Car 4">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="./Images/drift_image_5.jpeg" onclick="currentSlide(5 )" alt="Drift Car 5">
+                </div>
+                </div>
+            </div>
+
+            <!-- VIDEO 1 -->
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aGV6uNh33h4?si=XnIYuoMXZhdgXvjz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <!-- END VIDEO 1-->
+            
         </div>
     </section>
     <!-- END MEDIA -->
