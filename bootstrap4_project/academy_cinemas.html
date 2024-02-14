@@ -62,7 +62,8 @@
             <h3>Now Playing:</h3>
             <ul class="list-group">
               <li class="list-group-item">
-                <a class="nav-link" href="#">Kong: Skull Island</a>
+                <!-- Added a badge to display next to film title saying 'NEW'-->
+                <a class="nav-link" href="#">Kong: Skull Island <span class="badge badge-primary">NEW</span></a>
               </li>
               <li class="list-group-item">
                 <a class="nav-link" href="#">Ghost in the Shell</a>
@@ -84,7 +85,8 @@
               <img class="card-img-top embed-responsive-item" src="./Img/kongskullisland.jpg" alt="Kong Skull Island Image">
             </div>
             <div class="card-body">
-              <h5 class="card-title">Kong: Skull Island</h5>
+              <!-- Added a badge to display next to film title saying 'NEW'-->
+              <h5 class="card-title">Kong: Skull Island <span class="badge badge-primary">NEW</span></h5>
               <p class="card-text">A team of scientists explore an uncharted island in the Pacific, venturing into the domain of the mighty Kong, and must fight to escape primal Eden.</p>
               <span class="badge badge-pill badge-info">12:00pm</span>
               <span class="badge badge-pill badge-info">1:30pm</span>
@@ -129,15 +131,81 @@
 
       <!-- /showtimes -->
 
+      <!-- jumbotron heading -->
+
+      <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+        <div class="container">
+          <h1 class="display-4 hidden-sm-down" style="color: #fff; font-family: roboto; font-weight: 900; text-transform: uppercase;"> Movie Deals</h1>
+          <p class="lead">Check out our monthly deals...</p>
+          <!-- movie deals -->
+          <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>
+          <!-- /movie deals -->
+        </div>
+      </div>
+
+      <!-- /jumbotron heading -->
+
+      <!-- sign up form -->
+
       <div id="deals" class="text-center">
         <form>
           <h1 class="text-primary my-5">Sign up for Movie Club Rewards!</h1>
           <div class="form-group">
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <!-- Popover effect added to button -->
+          <button type="button" class="btn btn-primary popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to receive great movie reward deals!">
+            Sign up!
+          </button>
         </form>
       </div>
+
+      <!-- /sign up form -->
+
+      <!-- form modal -->
+
+      <div class="modal" tabindex="-1" id="register">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Register to receive movie deals...</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+  
+              <form>
+                <fieldset class="form-group">
+                  <label for="firstname">First Name:</label>
+                  <input type="text" class="form-control" id="firstname" placeholder="First Name...">
+                </fieldset>
+                <fieldset class="form-group">
+                  <label for="lastname">Last Name:</label>
+                  <input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+                </fieldset>
+                <fieldset class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="text" class="form-control" id="email" placeholder="Email...">
+                </fieldset>
+                <fieldset class="form-group">
+                  <label for="password">Password:</label>
+                  <input type="text" class="form-control" id="password" placeholder="Password...">
+                </fieldset>
+              </form>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- /form modal -->
+
+      <!-- footer -->
 
       <div class="container my-5">
         <ul class="nav nav-inline">
@@ -156,12 +224,20 @@
         </ul>
       </div>
 
+      <!-- /footer -->
+
     </div>
 
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <!-- jQuery for popover effect -->
+    <script>
+      $('.popover-dismiss').popover({
+        trigger: 'focus'
+      })
+    </script>
   </body>
 </html>
