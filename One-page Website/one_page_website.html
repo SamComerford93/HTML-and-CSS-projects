@@ -1,185 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Drift King Productions</title>
-    <link rel="stylesheet" href="./CSS/one_page.css">
-    <script src="JS/one_page_website.js" defer></script>
-</head>
-<body>
-    <!-- NAV -->
-    <div>
-        <ul>
-            <a href="#home" id="link"><li>HOME</li></a>
-            <a href="#media" id="link"><li>MEDIA</li></a>
-            <a href="#contact" id="link"><li>CONTACT</li></a>
-        </ul>
-    </div>
-
-    <!-- END NAV -->
-
-    <!-- HOME -->
-    <div id="home">
-        <h1>Welcome To Drift King Productions</h1>
-
-        <p>Here at Drift King Productions we can make amazing content for you to use on your social channels.</p>
-    </div>
-    <!-- End HOME -->
-
-    <!-- MEDIA -->
-    <section>
-        <div id="media">
-            <h1>Media</h1>
-            <div>
-
-                <!-- PHOTO 1 -->
-                
-                <div>
-                    <img src="./Images/drift_image_1.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Car Drifting">
-                </div>
-
-                <!-- END PHOTO 1 -->
-
-                <!-- PHOTO 2 -->
-                
-                <div>
-                    <img src="./Images/drift_image_2.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Car Drifting">
-                </div>
-
-                <!-- END PHOTO 2 -->
-
-                <!-- PHOTO 3 -->
-                
-                <div>
-                    <img src="./Images/drift_image_3.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Car Drifting">
-                </div>
-
-                <!-- END PHOTO 3 -->
-
-                <!-- PHOTO 4 -->
-                
-                <div>
-                    <img src="./Images/drift_image_4.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="Car Drifting">
-                </div>
-
-                <!-- END PHOTO 4 -->
-
-                <!-- PHOTO 5 -->
-                
-                <div>
-                    <img src="./Images/drift_image_5.jpeg" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="Car Drifting">
-                </div>
-
-                <!-- END PHOTO 5 -->
-            </div>
-
-            <!-- The Modal/Lightbox -->
-            <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal()">&times;</span>
-                <div class="modal-content">
-            
-                <div class="mySlides">
-                    <div class="numbertext">1 / 5</div>
-                    <img src="./Images/drift_image_1_large.jpeg" style="width:100%">
-                </div>
-            
-                <div class="mySlides">
-                    <div class="numbertext">2 / 5</div>
-                    <img src="./Images/drift_image_2_large.jpeg" style="width:100%">
-                </div>
-            
-                <div class="mySlides">
-                    <div class="numbertext">3 / 5</div>
-                    <img src="./Images/drift_image_3_large.jpeg" style="width:100%">
-                </div>
-            
-                <div class="mySlides">
-                    <div class="numbertext">4 / 5</div>
-                    <img src="./Images/drift_image_4_large.jpeg" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">5 / 5</div>
-                    <img src="./Images/drift_image_5_large.jpeg" style="width:100%">
-                </div>
-            
-                <!-- Next/previous controls -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            
-                <!-- Caption text -->
-                <div class="caption-container">
-                    <p id="caption"></p>
-                </div>
-            
-                <!-- Thumbnail image controls -->
-                <div class="column">
-                    <img class="demo" src="./Images/drift_image_1.jpeg" onclick="currentSlide(1)" alt="Drift Car 1">
-                </div>
-            
-                <div class="column">
-                    <img class="demo" src="./Images/drift_image_2.jpeg" onclick="currentSlide(2)" alt="Drift Car 2">
-                </div>
-            
-                <div class="column">
-                    <img class="demo" src="./Images/drift_image_3.jpeg" onclick="currentSlide(3)" alt="Drift Car 3">
-                </div>
-            
-                <div class="column">
-                    <img class="demo" src="./Images/drift_image_4.jpeg" onclick="currentSlide(4)" alt="Drift Car 4">
-                </div>
-
-                <div class="column">
-                    <img class="demo" src="./Images/drift_image_5.jpeg" onclick="currentSlide(5 )" alt="Drift Car 5">
-                </div>
-                </div>
-            </div>
-
-            <!-- VIDEO 1 -->
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/aGV6uNh33h4?si=XnIYuoMXZhdgXvjz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <!-- END VIDEO 1-->
-            
+    <head>
+        <meta charset="UTF-8">
+        <title>Drift King Productions</title>
+        <link rel="stylesheet" href="./CSS/one_page.css">
+        <script src="JS/one_page_website.js" defer></script>
+    </head>
+    <body>
+    <script>
+        document.body.classList.add('fade-out');
+    </script>
+        <!-- NAV -->
+        <div>
+            <ul>
+                <a href="#home" id="link"><li>HOME</li></a>
+                <a href="#media" id="link"><li>MEDIA</li></a>
+                <a href="#contact" id="link"><li>CONTACT</li></a>
+            </ul>
         </div>
-    </section>
-    <!-- END MEDIA -->
 
-    <!-- CONTACT -->
-    <section>
-        <div id="contact">
-            <div>
-                <h1>Contact</h1>
+        <!-- END NAV -->
+
+        <!-- HOME -->
+        <div id="home">
+            <h1>Welcome To Drift King Productions</h1>
+
+            <p>Here at Drift King Productions we can make amazing content for you to use on your social channels.</p>
+        </div>
+
+        <img src="./Images/cartoon_car.jpg" alt="Cartoon Car" class="moving-car">
+        <!-- End HOME -->
+
+        <!-- MEDIA -->
+        <section>
+            <div id="media">
+                <h1>Media</h1>
                 <div>
-                    <h2>Get in contact today about booking!</h2>
-                    <p>
-                        Please provide us with your contact information.
-                    </p>
+
+                    <!-- PHOTO 1 -->
+                    
                     <div>
-                        <form action="" method="post">
-                            <input class="contact" type="text" placeholder="First Name" value="">
-                            <input class="contact" type="text" placeholder="Last Name" value="">
-                            <input class="contact" type="text" placeholder="Email Address" value="">
-                            <input class="contact" type="text" placeholder="Phone Number" value="">
-                            <div class="form-spacer">
-                                <label class="terms">Terms and Conditions</label>
-                            </div>
-                            <div>
-                                <input type="submit" value="Submit">
-                            </div>
-                        </form>
+                        <img src="./Images/drift_image_1.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Car Drifting">
+                    </div>
+
+                    <!-- END PHOTO 1 -->
+
+                    <!-- PHOTO 2 -->
+                    
+                    <div>
+                        <img src="./Images/drift_image_2.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Car Drifting">
+                    </div>
+
+                    <!-- END PHOTO 2 -->
+
+                    <!-- PHOTO 3 -->
+                    
+                    <div>
+                        <img src="./Images/drift_image_3.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Car Drifting">
+                    </div>
+
+                    <!-- END PHOTO 3 -->
+
+                    <!-- PHOTO 4 -->
+                    
+                    <div>
+                        <img src="./Images/drift_image_4.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="Car Drifting">
+                    </div>
+
+                    <!-- END PHOTO 4 -->
+
+                    <!-- PHOTO 5 -->
+                    
+                    <div>
+                        <img src="./Images/drift_image_5.jpeg" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="Car Drifting">
+                    </div>
+
+                    <!-- END PHOTO 5 -->
+                </div>
+
+                <!-- The Modal/Lightbox -->
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="./Images/drift_image_1_large.jpeg" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="./Images/drift_image_2_large.jpeg" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="./Images/drift_image_3_large.jpeg" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="./Images/drift_image_4_large.jpeg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="./Images/drift_image_5_large.jpeg" style="width:100%">
+                    </div>
+                
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                
+                    <!-- Thumbnail image controls -->
+                    <div class="column">
+                        <img class="demo" src="./Images/drift_image_1.jpeg" onclick="currentSlide(1)" alt="Drift Car 1">
+                    </div>
+                
+                    <div class="column">
+                        <img class="demo" src="./Images/drift_image_2.jpeg" onclick="currentSlide(2)" alt="Drift Car 2">
+                    </div>
+                
+                    <div class="column">
+                        <img class="demo" src="./Images/drift_image_3.jpeg" onclick="currentSlide(3)" alt="Drift Car 3">
+                    </div>
+                
+                    <div class="column">
+                        <img class="demo" src="./Images/drift_image_4.jpeg" onclick="currentSlide(4)" alt="Drift Car 4">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="./Images/drift_image_5.jpeg" onclick="currentSlide(5 )" alt="Drift Car 5">
+                    </div>
+                    </div>
+                </div>
+
+                <!-- VIDEO 1 -->
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aGV6uNh33h4?si=XnIYuoMXZhdgXvjz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <!-- END VIDEO 1-->
+                
+            </div>
+        </section>
+        <!-- END MEDIA -->
+
+        <!-- CONTACT -->
+        <section>
+            <div id="contact">
+                <div>
+                    <h1>Contact</h1>
+                    <div>
+                        <h2>Get in contact today about booking!</h2>
+                        <p>
+                            Please provide us with your contact information.
+                        </p>
+                        <div>
+                            <form name="contactForm" action="" method="post" onsubmit="return validateForm()" class="form-contact">
+                                <input class="contact" type="text" name="fname" placeholder="First Name" value="">
+                                <input class="contact" type="text" name="lname" placeholder="Last Name" value="">
+                                <input class="contact" type="text" name="email" placeholder="Email Address" value="">
+                                <input class="contact" type="tel" name="phonenum" placeholder="Phone Number" value="">
+                                <div class="form-spacer">
+                                    <label class="terms">Terms and Conditions</label>
+                                </div>
+                                <div>
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <!-- END CONTACT-->
+
+        <!-- LOGIN -->
+
+        <!-- A button to open the popup form -->
+        <button class="open-button" onclick="openForm()">Login</button>
+
+        <!-- The form -->
+        <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Login</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
         </div>
-    </section>
-    <!-- END CONTACT-->
 
-    <!-- FOOTER -->
-    <div>
-        www.driftkingproductions.com &nbsp;|&nbsp; &copy; 2023
-    </div>
-    <!-- END FOOTER -->
+        <!-- END LOGIN -->
 
-</body>
+        <!-- FOOTER -->
+        <div>
+            www.driftkingproductions.com &nbsp;|&nbsp; &copy; 2023
+        </div>
+        <!-- END FOOTER -->
+
+    </body>
 </html>

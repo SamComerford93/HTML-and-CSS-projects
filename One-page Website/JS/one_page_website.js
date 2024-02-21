@@ -1,3 +1,7 @@
+window.addEventListener('DOMContentLoaded', () => {
+  document.body.classList.remove('fade-out');
+});
+
 // Open the Modal
 function openModal() {
     document.getElementById("myModal").style.display = "block";
@@ -38,3 +42,39 @@ function openModal() {
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
+
+  // Form validation 
+  function validateForm() {
+    let a = document.forms['contactForm']['fname'].value;
+    if (a == "") {
+      alert("First name must be filled out!");
+      return false;
+    }
+
+    let b = document.forms['contactForm']['lname'].value;
+    if (b == "") {
+      alert("Last name must be filled out!");
+      return false;
+    }
+
+    let c = document.forms['contactForm']['email'].value;
+    if (c == "") {
+      alert("Email name must be filled out!");
+      return false;
+    }
+
+    let d = document.forms['contactForm']['phonenum'].value;
+    if (d == "") {
+      alert("Phone number must be filled out!");
+      return false;
+    }
+  }
+
+// Login Form Functions
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
